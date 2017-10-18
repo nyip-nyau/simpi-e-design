@@ -23,3 +23,7 @@ Route::resource('premeeting', 'PremeetingController');
 Route::resource('pertemuan', 'PertemuanController');
 Route::resource('prameeting', 'PrameetingController');
 Route::resource('persetujuan', 'PersetujuanController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
